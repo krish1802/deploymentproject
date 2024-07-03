@@ -1,0 +1,83 @@
+.maingallery-container{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+  }
+  .gallery-column{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+  }
+  
+  
+  
+  
+  /* line 2, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
+  .gallery-area {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 2, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
+    .gallery-area {
+      padding-top: 65px;
+      padding-bottom: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    /* line 2, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
+    .gallery-area {
+      padding-top: 65px;
+      padding-bottom: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  
+  /* line 19, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
+  .gallery-area .box {
+    position: relative;
+  }
+  
+  /* line 22, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
+  /* .gallery-area .box .gallery-img { */
+    /* height: 565px;
+    background-size: cover;
+    background-repeat: no-repeat; */
+  
+    /* width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover; */
+  
+  /* } */
+  
+  /* line 27, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
+  .gallery-area .box .big-img img{
+    background-color: #ffffff96;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      object-fit: contain;
+      border: 2px solid white;
+  }
+  
+  #electrolyte-gallery img{
+    padding-left: 32px;
+  }
+  @media only screen and (max-width: 450px) {
+    .gallery-column{
+  
+      flex-direction: column;
+     
+    }
+  }

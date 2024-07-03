@@ -1,0 +1,14 @@
+--------------------------------------------FOR-FRONTEND-------------------------------------------------------
+Edited arms, chest, back html files to add the variable check <head> script and check onClick of <upload video>
+Edited main.py added workers for multithreading
+--------------------------------------------FOR-BACKEND---------------------------------------------------------
+resize image discarded from every exercise check the initial code after loop starts on every exercise
+frame_height and frame_width added after img variable initialisation
+check main.py new method of integration is implemented
+
+-------------------------------------------INSTRUCTIONS FOR FRONTEND--------------------------------------------
+
+BACKEND HAS BEEN INTEGRATED TILL CHEST (REMOVE CHEST FLIES FROM FRONTEND )
+( ADD INCLINED AND DECLINED PUSHUPS ON THE FRONTEND ), 
+ARMS AND BACK (except Lat pulldowns)
+PLEASE UPDATE THE CHANGES ON THIS CODE WHATEVER YOU HAVE DONE ON THE FRONTEND.
