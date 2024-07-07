@@ -193,14 +193,15 @@ ul h1{
 .button:hover{
     border-radius: 7px;
     border-color: white;
-
 }
 
-.roll{
+.roll {
     background-color: rgb(137, 12, 12);
-    height: 120px;
-
-
+    height: 120px; /* Adjust height as needed */
+    min-height: 80px; /* Minimum height to ensure content visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width:800px) {
@@ -208,22 +209,65 @@ ul h1{
         flex-direction: column;
         margin: 0px;
     }
-    .login-container{
+    /* .login-container{
         height: 700px;
         width: 500px;
         padding-left: 20px;
-    }
+    } */
     .text{
         width: 100%;
     }
 
 }
 @media screen and (max-width:800px){
-    .login-container{
+    /* .login-container{
         padding-left: 50px;
+    } */
+    .roll{
+        width: 100%;
     }
     .text{
         width: 350px;
         padding-left: 10px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .roll {
+        height: 120px;
+        min-height: 60px; /* Adjust minimum height as needed */
+        width: 120%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .text {
+        padding-left: 10%;
+        width: 100%;
+        text-align: center; /* Center align text on smaller screens */
+        margin-bottom: 20px; /* Adjust margin as needed */
+    }
+    .text-desc {
+        height: auto; /* Let the height adjust as per content */
+        margin: 20px 0; /* Adjust margin as needed */
+    }
+    .login-container {
+        /* left: 5%; */
+        padding-left: 0px;
+        width: 120%; 
+        /* padding: 0 20px;  */
+        /* left: 30%; */
+    }
+    .login-box {
+        margin: 2em 0; /* Adjust margin as needed */
+        padding: 20px; /* Adjust padding as needed */
+    }
+    .withGoogle {
+        width: 100%; /* Full width on smaller screens */
+        font-size: 1.2em; /* Adjust font size as needed */
     }
 }

@@ -133,7 +133,7 @@
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="#starter"><img src="../static/img/logo/logo.png" alt=""></a>
+                            <a href="#starter"><img src="../static/img/logo/new_logo.png" alt=""></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu f-right d-none d-lg-block">
@@ -141,7 +141,7 @@
                                 <ul id="navigation">
                                     <li><a href="/">Home</a></li>
                                     <li><a href="#aboutus">About</a></li>
-                                     <li><a href="/store">Store</a></li>
+                                    <li><a href="/store">Store</a></li>
                                      
                                     <!-- <li><a href="pricing.html">Pricing</a></li> -->
                                     <!-- <li><a href="gallery.html">Gallery</a></li> -->
@@ -153,6 +153,11 @@
                                         </ul>
                                     </li>
                                     <li><a href="#contactus">Contact</a></li>
+                                    {% if session['logged_in'] == True %}
+                                        <li><a href="/logout">Logout</a></li>
+                                    {% else %}
+                                        <li><a href="/login">Login</a></li>
+                                    {% endif %}
                                     <!-- <li><button class="login-btn btn "><a href="/login" class="login-a"> Login</a></button></li> -->
                                     <!-- <a href="/login" class="border-btn" style="padding-top: 20px;">Login</a> -->
                                 </ul>
@@ -677,7 +682,7 @@
                         <div class="single-footer-caption mb-50 text-center">
                             <!-- logo -->
                             <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <a href="index.html"><img src="../static/img/logo/new_logo.png" height="200px" width="200px" alt=""></a>
+                                <a href="index.html"><img src="../static/img/logo/logo.png" height="200px" width="200px" alt=""></a>
                             </div>
                             <!-- Menu -->
                             <!-- Header Start -->
@@ -702,11 +707,6 @@
                             </div>
                             <!-- Header End -->
                             <!-- social -->
-                            <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -47,7 +47,7 @@
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            <a href="/"><img src="../static/img/logo/new_logo.png" alt=""></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu f-right d-none d-lg-block">
@@ -201,8 +201,25 @@
         <li style="color: white;"><strong>Local Food Accessibility:</strong> Recommendations based on what's available in your area.</li>
         <li style="color: white;"><strong>Flexible Dietary Options:</strong> Catering to various dietary preferences and requirements.</li>
         <li style="color: white;"><strong>Continuous Improvement:</strong> Algorithms refine recommendations based on user feedback and data updates.</li>
-    </ul>                   
-                            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OSAlsexW5M4myQ" async> </script> </form>
+        <li style="color: white;"><strong>Know what you're getting:</strong> Download the sample nutrition template, to get a glimpse what you will get.</li>
+    </ul>
+    <a style="color: white; margin-bottom:50px;" id="downloadButton" class="border-btn">Download Sample Template</a>   
+    <ul style="font-size: 20px; padding-bottom: 60px;">
+        <li style="color: white;"><strong>Create Your Plan Right Now:</strong> Click on the below button and proceed to make your diet within 3 minutes.</li>
+        <form style="margin-top: 20px;"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OSAlsexW5M4myQ" async> </script> </form>
+
+    </ul>
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = '../static/sampledietplan.pdf';  // Replace with the path to your file
+            link.download = 'sampledietplan.pdf';           // Replace with the desired file name
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          });
+    </script>
+
                         </div>
                     </div>
                 </div>
