@@ -198,19 +198,76 @@
                                             <p style="margin-left: 130px;"><a href="/pandc">Privacy Policy</a> & <a href="/tandc">Terms and Conditions</a></p>
                                             </div>
                                             <div class="submit-button">
-                                                <button type="" class="border-btn" id="myBtn">Upload</button>
+                                                <button type="submit" class="border-btn" id="myBtn">Upload</button>
                                             </div> 
-                                            <div class="bar-container" style="padding-left: 40px;">
+                                            <!-- <div class="bar-container" style="padding-left: 40px;">
                                                 <div id="myProgress">
                                                     <div id="myBar"></div>
                                                 </div>
                                             </div>
-                                                  
+                                                   -->
                                         </form>
                                     </div>
+                                    <div class="loading-overlay" id="loading-overlay">
+                                        <div class="loading-spinner"></div>
+                                        <div class="loading-text">This will take about 2 to 3 minutes, Do not close this page</div>
+                                    </div>
+                                    <iframe id="hidden-iframe" name="hidden-iframe" style="display:none;"></iframe>
+                                    <style>
+                                        .loading-overlay {
+                                            display: none; /* Hidden by default */
+                                            position: fixed; /* Stay in place */
+                                            z-index: 999; /* Sit on top */
+                                            left: 0;
+                                            top: 0;
+                                            width: 100%; /* Full width */
+                                            height: 100%; /* Full height */
+                                            overflow: hidden; /* Disable scroll */
+                                            background-color: rgba(0, 0, 0, 0.9); /* Black with opacity */
+                                        }
+                                    
+                                        .loading-spinner {
+                                            position: fixed;
+                                            top: 40%;
+                                            left: 45%;
+                                            transform: translate(-50%, -50%);
+                                            border: 16px solid #f3f3f3; /* Light grey */
+                                            border-top: 16px solid #ff0000; /* Red (change to your desired red color) */
+                                            border-radius: 50%;
+                                            width: 120px;
+                                            height: 120px;
+                                            animation: spin 2s linear infinite;
+                                        }
+                                        @media (max-width: 768px) {
+                                            /* Adjust position for screens smaller than 768px (typical mobile devices) */
+                                            .loading-spinner {
+                                                left: 32%; /* Adjust left position for smaller screens */
+                                            }
+                                        }
+                                        .loading-text {
+                                            position: fixed;
+                                            top: calc(47% + 70px); /* Adjust the position to place it below the spinner */
+                                            left: 48.3%;
+                                            transform: translateX(-50%);
+                                            color: white; /* Text color */
+                                            font-size: 16px;
+                                            text-align: center;
+                                        }
+                                    
+                                        @keyframes spin {
+                                            0% { transform: rotate(0deg); }
+                                            100% { transform: rotate(360deg); }
+                                        }
+                                    </style>
+                                    <script>
+                                        document.getElementById('myBtn').addEventListener('click', function() {
+                                                document.getElementById('loading-overlay').style.display = 'block';
+                                        });
+                                    </script>
+                                </div>
                                     
                                 </div>
-                                <p id="clickMessage" style="margin-top: 3vh;font-size: 25px; color:greenyellow; display: block;">Processing May take sometime, please be patient..</p>
+                                <!-- <p id="clickMessage" style="margin-top: 3vh;font-size: 25px; color:greenyellow; display: block;">Processing May take sometime, please be patient..</p> -->
                             </div>
                         </div>
                     </div>
